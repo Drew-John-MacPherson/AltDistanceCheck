@@ -345,7 +345,7 @@ Transform:
   - {fileID: 2064789438}
   - {fileID: 562589873}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &568020393
 LODGroup:
@@ -584,7 +584,7 @@ Transform:
   m_Children:
   - {fileID: 633225166}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1125340998
 MonoBehaviour:
@@ -607,6 +607,7 @@ MonoBehaviour:
   passCheckpoint2: 0
   passCheckpoint3: 0
   gameobjectRenderer: {fileID: 568020390}
+  materialShader: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &1260821682
 GameObject:
   m_ObjectHideFlags: 0

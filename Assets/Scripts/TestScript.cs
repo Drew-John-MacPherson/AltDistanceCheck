@@ -14,8 +14,9 @@ public class TestScript : MonoBehaviour
     [SerializeField] private bool passCheckpoint2 = false;
     [SerializeField] private bool passCheckpoint3 = false;
     public MeshRenderer gameobjectRenderer;
+    public Material materialShader;
 
-
+    // add material shader change for check point passing?
     void Update()
     {
         float distance = Vector3.Distance(playertransform.position, gameobjecttransform.position);
@@ -25,21 +26,24 @@ public class TestScript : MonoBehaviour
         {
             passCheckpoint1 = true;
             Debug.Log("Passed Checkpoint 1!");
-            gameobjectRenderer.material = Resources.Load<Material>("Cylinder Material");
+            // LOD Group substitute
+            // gameobjectRenderer.material = Resources.Load<Material>("Cylinder Material");
         }
 
         if (distance <= checkpoint2Distance && !passCheckpoint2)
         {
             passCheckpoint2 = true;
             Debug.Log("Passed Checkpoint 2!");
-            gameobjectRenderer.material = Resources.Load<Material>("Capsule Material");
+            // LOD Group substitute
+            // gameobjectRenderer.material = Resources.Load<Material>("Capsule Material");
         }
         
         if (distance <= checkpoint3Distance && !passCheckpoint3)
         {
             passCheckpoint3 = true;
             Debug.Log("Passed Checkpoint 3!");
-            gameobjectRenderer.material = Resources.Load<Material>("Cube Material");
+            // LOD Group substitute
+            // gameobjectRenderer.material = Resources.Load<Material>("Cube Material");
         }
     }
 }
