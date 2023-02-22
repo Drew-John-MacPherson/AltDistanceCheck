@@ -6,17 +6,10 @@ public class CubeScript : MonoBehaviour
 {
     public GameObject player;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    /*
     void Update()
     {
-        /*
+        
         //Get the distance to player using Vector3.Distance
         float distancetoPlayer = Vector3.Distance(player.transform.position, transform.position);
 
@@ -37,9 +30,10 @@ public class CubeScript : MonoBehaviour
 
         float calcDistance + Mathf.Sqrt(sqXYZ);
         Debug.Log("Our calculated distance is " + calcDistance);
-        */
+        
 
         Debug.Log(CalculateDistanceBetweenVectors(player.transform.position, transform.position));
+        
 
         // look at the player
         transform.LookAt(player.transform.position);
@@ -79,5 +73,5 @@ public class CubeScript : MonoBehaviour
 
     }
 
-
+*/
 }
